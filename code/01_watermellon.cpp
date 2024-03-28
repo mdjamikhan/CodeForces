@@ -12,7 +12,7 @@ int main()
     else
     {
         cout << "NO" << endl;
-        // test
+        // testnn
     }
     return 0;
 }

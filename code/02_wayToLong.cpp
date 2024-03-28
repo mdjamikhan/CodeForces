@@ -2,6 +2,7 @@
 using namespace std;
 int main()
 {
+    // test
     int n;
     cin >> n;
     string s;

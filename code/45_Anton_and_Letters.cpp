@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     string a;
-    cin >> a;
+    getline(cin, a);
     set<char> s;
     for (int i = 0; i < a.size(); i++)
     {
@@ -11,9 +11,10 @@ int main()
             continue;
         else if (a[i] == '}')
             continue;
-        else if (a[i] == ', ')
+        else if (a[i] == ',')
             continue;
-
+        else if (a[i] == ' ')
+            continue;
         else
         {
             s.insert(a[i]);

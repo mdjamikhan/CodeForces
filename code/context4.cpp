@@ -3,20 +3,32 @@ using namespace std;
 
 void fun(int n)
 {
-    for (int i = 0; i < n; i++)
+    if (n == 1)
     {
-        for (int j = 0; j < n; j++)
+        cout << "##" << endl;
+        cout << "##" << endl;
+    }
+    else
+    {
+
+        for (int i = 0; i < n; i++)
         {
-            if ((i + j) % 2 == 0)
+            for (int j = 0; j < n; j++)
             {
-                cout << "##";
+                if ((i + j) % 2 == 0)
+                {
+                    cout << "##";
+                }
+                else
+                {
+                    cout << ".";
+                    // cout << "." << endl;
+                    // cout << ".";
+                    // cout << ".";
+                }
             }
-            else
-            {
-                cout << "::";
-            }
+            cout << endl;
         }
-        cout << endl;
     }
 }
 

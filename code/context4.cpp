@@ -11,21 +11,11 @@ void fun(int n)
     else
     {
 
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < 2 * n; i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < 2 * n; j++)
             {
-                if ((i + j) % 2 == 0)
-                {
-                    cout << "##";
-                }
-                else
-                {
-                    cout << ".";
-                    // cout << "." << endl;
-                    // cout << ".";
-                    // cout << ".";
-                }
+                cout << (i / 2 + j / 2 & 1 ? '.' : '#');
             }
             cout << endl;
         }
